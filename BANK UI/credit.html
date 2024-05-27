@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .card{ 
+        text-align: center;
+    }
+    .container{
+        width: 400px;
+    }
+</style>
+
+<body>
+    <a href="ac.html"><button class="btn btn-outline-success">Back to Details</button></a>
+    <div class="row">
+        <div class="col-sm-5">
+            <img src="/Users/vegiganesh54/Downloads/undraw_nakamoto_2iv6.png" height="500px" width=100%>
+        </div>
+        <div class="col-sm-6">   
+          
+            <div class="container mt-5"> 
+               <div class="card">
+                        <h2>credit</h2>
+                        <br>
+                        <label for="psw"><b>Enter AMount</b></label>
+                        <input type="password" placeholder="Enter AMount" name="psw" required>
+                        <button class="btn btn-outline-success"onclick="credit()">credit</button>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    <div class="col-sm-1"> </div>
+            <script>
+                const Amount=12000;
+                function credit(){
+          let x= document.getElementById("balance").value;
+                    let xvalue=parseInt(x);
+                    let result=(Amount+xvalue);
+                    alert(result);
+               
+                }
+            </script>
+    </body>
+    </html>

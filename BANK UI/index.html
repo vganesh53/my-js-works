@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js" integrity="sha512-ykZ1QQr0Jy/4ZkvKuqWn4iF3lqPZyij9iRv6sGqLRdTPkY69YX6+7wvVGmsdBbiIfN/8OdsI7HABjvEok6ZopQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VG BANK</title>
+</head>
+<style>
+    
+
+body {
+    background-image:url("https://img.freepik.com/free-vector/eiffel-tower_1284-38751.jpg?t=st=1716701836~exp=1716705436~hmac=7b49b97bf987cc91869a7314843968a64caa8b1dea3e119167c07e5cf03fd0b7&w=1380");
+    /* background-color: #9c9e99; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0; 
+    padding: 0;
+    height: 700px;
+    width: 100%;
+  }
+       
+        .welcome-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        
+    }
+    
+    .user-icon img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid #333;
+        padding: 5px;
+        background-color: #efe3e3;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    h1 {
+        color: #0c0202;
+        margin-bottom: 20px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+   
+
+        .spn{
+            padding-top: 10px;
+        }
+        
+
+button {
+	border-radius: 20px;
+	border: 1px solid #7A0051;
+	background-color:#7A0051;
+	color: #FFFFFF;
+	font-size: 12px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+    width: 400px;
+    height: 40px;
+    margin: 20px;
+}
+
+.social{
+  margin-top: 30px;
+  display: flex;
+}
+.social div{
+  background: rgba(143, 8, 8, 0.763);
+  width: 150px;
+  border-radius: 3px;
+  padding: 5px 10px 10px 5px;
+  background-color: rgba(255,255,255,0.27);
+  color: #642205;
+  text-align: center;
+}
+.social div:hover{
+  background-color: rgba(255,255,255,0.47);
+}
+.social .fb{
+  margin-left: 25px;
+}
+.social i{
+  margin-right: 4px;
+}
+     
+        
+</style>
+<body>
+    <div class="row">
+        <div class="col-sm-4"></div>
+        <div class="col-sm-3"></div>
+        <div class="col-sm-4" > 
+        
+        <div class="user-icon">
+            <div class="welcome-container">
+           <img src="https://th.bing.com/th/id/OIP.uSnxOK1IpBriDlLxHDXetQAAAA?pid=ImgDet&w=182&h=173&c=7&dpr=1.3" alt="lg">
+        <h1>Welcome GANESH VEGI </h1>
+        
+        <button onclick="details()">Login</button>
+        <button onclick="myFunction()">check Balance</button>
+        <div class="social">
+            <div class="go"><i class="fab fa-google"></i>  Google</div>
+            <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+          </div>
+      </form>
+      
+    </div></div>
+
+    </div>
+    <div class="col-sm-1"></div>
+  
+
+   
+  
+    <script>  function details(){
+        let pin = +prompt("Enter your pin");
+        if(pin===1234){
+            location.href="ac.html"
+        }
+        else{
+            alert("Enter Valid Pin")
+        }
+    }
+
+   
+function myFunction() {
+var txt;
+if (confirm("current balance:12000")) {
+txt = "";
+} else {
+txt = "";
+}
+document.getElementById("demo").innerHTML = txt;
+}
+
+  
+    </script>
+</body>
+</html>

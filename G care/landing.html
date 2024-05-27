@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap-grid.min.css" integrity="sha512-i1b/nzkVo97VN5WbEtaPebBG8REvjWeqNclJ6AItj7msdVcaveKrlIIByDpvjk5nwHjXkIqGZscVxOrTb9tsMA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+body{
+  color: #090b08;
+  margin:  0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  background-color: #ffe9ef;}
+  h1{
+  font-family: 'Righteous', sans-serif;
+  color: rgba(16, 10, 10, 0.98);
+  text-transform: uppercase;
+  font-size: 2.4rem;}
+    .main{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .container {
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(17, 25, 40, 0.25);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.125);  
+  padding: 38px;  
+  filter: drop-shadow(0 30px 10px rgba(0,0,0,0.125));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  text-align: center;
+  
+}
+form{
+    text-align: center;
+}
+.submit{
+
+    border: none;
+  padding: 12px 24px;
+  border-radius: 24px;
+  font-size: 12px;
+  font-size: 0.8rem;  
+  letter-spacing: 2px;  
+  cursor: pointer;
+
+  background: rgba(30, 4, 147, 0.9);
+  color: rgba(251, 248, 248, 0.95);
+  filter: drop-shadow(0);
+  font-weight: bold;
+  transition: all .3s ease; 
+
+}
+.submit:hover{
+  transform: scale(1.125);  
+  border-color: rgba(27, 23, 23, 0.9);
+  filter: drop-shadow(0 10px 5px rgba(0,0,0,0.125));
+  transition: all .4s ease;    
+}:root {
+  --surface-color: #fff;
+  --curve: 40;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  background-color: #fef8f8;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 4rem 5vw;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card {
+  position: relative;
+  display: block;
+  height: 100%;  
+  border-radius: calc(var(--curve) * 1px);
+  overflow: hidden;
+  text-decoration: none;
+}
+
+.card__image {      
+  width: 100%;
+  height: auto;
+}
+
+.card__overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;      
+  border-radius: calc(var(--curve) * 1px);    
+  background-color: var(--surface-color);      
+  transform: translateY(100%);
+  transition: .2s ease-in-out;
+}
+
+.card:hover .card__overlay {
+  transform: translateY(0);
+}
+
+.card__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 2em;
+  border-radius: calc(var(--curve) * 1px) 0 0 0;    
+  background-color: var(--surface-color);
+  transform: translateY(-100%);
+  transition: .2s ease-in-out;
+}
+
+.card__arc {
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  bottom: 100%;
+  right: 0;      
+  z-index: 1;
+}
+
+.card__arc path {
+  fill: var(--surface-color);
+ 
+}       
+
+.card:hover .card__header {
+  transform: translateY(0);
+}
+
+.card__thumb {
+  flex-shrink: 0;
+  width: 50px;
+  height: 50px;      
+  border-radius: 50%;      
+}
+
+.card__title {
+  font-size: 1em;
+  margin: 0 0 .3em;
+  color: #6A515E;
+}
+
+.card__tagline {
+  display: block;
+  margin: 1em 0;
+  font-family: "MockFlowFont";  
+  font-size: .8em; 
+  color: #D7BDCA;  
+}
+
+.card__status {
+  font-size: .8em;
+  color: #D7BDCA;
+}
+
+.card__description {
+  padding: 0 2em 2em;
+  margin: 0;
+  color: #D7BDCA;
+  font-family: "MockFlowFont";   
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}    
+
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>New In!</h1>
+    </div>
+    <div class="form">
+
+  
+  
+  <button  class="submit" onclick="window.location.href = 'index.html';">HOME</button>
+  <ul class="cards">
+    
+    <li>
+      <a href="" class="card">
+        <img src="https://img.freepik.com/free-vector/barber-concept-illustration_114360-2450.jpg?t=st=1713635940~exp=1713639540~hmac=8ab4fec5bd6dd89f0132747675f51a3c763f8fa7ceaccdb370a8d92e951cc600&w=996" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+            <img class="card__thumb" src="https://img.freepik.com/free-vector/barber-concept-illustration_114360-2450.jpg?t=st=1713635940~exp=1713639540~hmac=8ab4fec5bd6dd89f0132747675f51a3c763f8fa7ceaccdb370a8d92e951cc600&w=996" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">G sallon</h3>            
+              <span class="card__status">Comeing soon.</span>
+            </div>
+          </div>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+        </div>
+      </a>      
+    </li>
+    <li>
+      <a href="" class="card">
+        <img src="https://img.freepik.com/free-vector/beauty-salon-spa-illustration_1284-14821.jpg?t=st=1713636199~exp=1713639799~hmac=7fc06b7538bbb3363707a1392253705ae957160713440b8dfd25b40c1d9f779e&w=996" class="card__image" alt="" />
+        <div class="card__overlay">        
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+            <img class="card__thumb" src="https://img.freepik.com/free-vector/beauty-salon-spa-illustration_1284-14821.jpg?t=st=1713636199~exp=1713639799~hmac=7fc06b7538bbb3363707a1392253705ae957160713440b8dfd25b40c1d9f779e&w=996" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">beauty-salon-spa</h3>
+              <span class="card__status">comeing soon..</span>
+            </div>
+          </div>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="" class="card">
+        <img src="https://img.freepik.com/free-vector/hand-drawn-teej-festival-illustration_52683-65762.jpg?t=st=1713636262~exp=1713639862~hmac=cd3276612834e8af0fe85cad548b3cf34acb5a3a66620bdccfaf8126b7671dec&w=996" class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                     
+            <img class="card__thumb" src="https://img.freepik.com/free-vector/hand-drawn-teej-festival-illustration_52683-65762.jpg?t=st=1713636262~exp=1713639862~hmac=cd3276612834e8af0fe85cad548b3cf34acb5a3a66620bdccfaf8126b7671dec&w=996" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">Mehandhi </h3>
+                     
+              <span class="card__status">comeing soon..</span>
+            </div>
+          </div>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+        </div>
+      </a>
+    </li>
+    <li>
+      <a href="" class="card">
+        <img src="https://img.freepik.com/free-vector/sauna-woman-wearing-towel_1308-122930.jpg?t=st=1713636402~exp=1713640002~hmac=1a9a86b0956fefb92b70bafb404fa7478c53c2fcd3b3e254864bba6d2c7e8774&w=740 "class="card__image" alt="" />
+        <div class="card__overlay">
+          <div class="card__header">
+            <svg class="card__arc" xmlns="http://www.w3.org/2000/svg"><path /></svg>                 
+            <img class="card__thumb" src="https://img.freepik.com/free-vector/sauna-woman-wearing-towel_1308-122930.jpg?t=st=1713636402~exp=1713640002~hmac=1a9a86b0956fefb92b70bafb404fa7478c53c2fcd3b3e254864bba6d2c7e8774&w=740" alt="" />
+            <div class="card__header-text">
+              <h3 class="card__title">Spa </h3>
+              <span class="card__status">comeing soon ..</span>
+            </div>          
+          </div>
+          <p class="card__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores, blanditiis?</p>
+        </div>
+      </a>
+    </li>
+    
+         
+  </ul>
+  
+      
+    </body>
+</html>
